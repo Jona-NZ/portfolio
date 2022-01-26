@@ -12,8 +12,7 @@ li {
 
 /* For when I add multiple header features */
 header {
-  padding: 30px 10%;
-  background-color: #282c34;
+  padding: 30px;
   display: flex;
   justify-content: center;
 }

@@ -4,12 +4,10 @@ import Navbar from '../components/Navbar';
 
 const Layout = () => {
   return (
-    <>
-      <div style={{ backgroundColor: '#282c34', minHeight: '100vh' }}>
-        <Navbar />
-        <Outlet />
-      </div>
-    </>
+    <div style={{ backgroundColor: '#24292e', minHeight: '100vh' }}>
+      <Navbar />
+      <Outlet />
+    </div>
   );
 };
 
