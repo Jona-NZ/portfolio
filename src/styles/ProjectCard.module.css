@@ -29,11 +29,43 @@
 .tags span {
   margin: 0.5rem 0.5rem 0 0;
   padding: 0.2rem 0.5rem;
-  border: 0.1rem solid #83cd29;
   color: #fff;
   border-radius: 20px;
   font-size: 0.75rem;
   transition: all 0.2s;
+}
+
+/* TAG COLOUR STYLING */
+span.react {
+  border: 0.1rem solid #2596be;
+}
+
+span.react:hover {
+  background: #2595be75;
+}
+
+span.node {
+  border: 0.1rem solid #6da660;
+}
+
+span.node:hover {
+  background: #6da66075;
+}
+
+span.mongo {
+  border: 0.1rem solid #42a33a;
+}
+
+span.mongo:hover {
+  background: #42a33a75;
+}
+
+span.firebase {
+  border: 0.1rem solid #f9ca42;
+}
+
+span.firebase:hover {
+  background: #f9ca4275;
 }
 
 .cta {
@@ -66,4 +98,9 @@
 h2,
 p {
   color: #fff;
+}
+
+.cardImg {
+  width: 100%;
+  border-radius: 15px;
 }

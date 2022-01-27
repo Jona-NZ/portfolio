@@ -4,6 +4,7 @@ import styles from '../styles/ProjectCard.module.css';
 const ProjectCard = ({ props }) => {
   return (
     <div className={styles.card}>
+      <img className={styles.cardImg} src='/images/1.png' alt='' />
       <div className={styles.content}>
         <h2>Project Title</h2>
         <p>
@@ -11,10 +12,10 @@ const ProjectCard = ({ props }) => {
           consequatur.
         </p>
         <div className={styles.tags}>
-          <span>react</span>
-          <span>node</span>
-          <span>mongo</span>
-          <span>material-ui</span>
+          <span className={styles.react}>react</span>
+          <span className={styles.node}>node</span>
+          <span className={styles.mongo}>mongo</span>
+          <span className={styles.firebase}>firebase</span>
         </div>
       </div>
     </div>
