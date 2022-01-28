@@ -10,7 +10,6 @@ li {
   padding: 0px 20px;
 }
 
-/* For when I add multiple header features */
 header {
   padding: 30px;
   display: flex;
@@ -26,20 +25,111 @@ a {
   transition: all 0.3s ease 0s;
 }
 
-.dmToggle {
-  font-weight: bold;
-  font-size: 17px;
-  color: #edf0f1;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-  padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
+a:hover {
+  color: #209cee;
+}
+
+.toggleMargin {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .logo {
   cursor: pointer;
   margin-right: auto;
+}
+
+/* Mobile Overlay */
+
+.menu {
+  display: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.menuToggle {
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.menuToggle:hover,
+.menuToggle:focus {
+  color: #209cee;
+}
+
+@media only screen and (max-width: 800px) {
+  nav li,
+  .toggleMargin {
+    display: none;
+  }
+
+  .menu {
+    display: inherit;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #24252a;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlayContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.toggleOverlayMargin {
+  margin-top: 25px;
+}
+
+.overlayContent a {
+  display: block;
+  padding: 15px;
+  font-size: 36px;
+  color: #edf0f1;
+  transition: all 0.3s ease 0s;
+}
+
+.overlayContent a:hover,
+a:focus,
+.closebtn:hover,
+.closebtn:focus {
+  color: #209cee;
+}
+
+.closebtn {
+  font-size: 60px;
+  color: #edf0f1;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  cursor: pointer;
+  background-color: #24252a;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+@media screen and (max-height: 450px) {
+  .overlayContent a {
+    font-size: 20px;
+  }
+
+  .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

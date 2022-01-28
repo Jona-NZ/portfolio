@@ -2,20 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  transition: background 0.2s linear;
-}
-
-body.dark {
-  background: #292c35;
-}
-
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -45,6 +31,10 @@ body.dark {
   width: 22px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
+}
+
+.label .toggleBall:hover {
+  background-color: #209cee;
 }
 
 .checkbox:checked + .label .toggle-ball {
