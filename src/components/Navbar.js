@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Navbar.module.css';
+import styles from '../styles/Navbar.module.css';
+//import LightDarkToggle from './LightDarkToggle';
 
 const navbar = () => {
   return (
     <header>
-      <img className='logo' src='images/logo.png' height='40px' alt='logo' />
+      <img
+        className={styles.logo}
+        src='images/logo.png'
+        height='40px'
+        alt='logo'
+      />
       <nav>
         <ul>
           <li>
@@ -19,6 +25,11 @@ const navbar = () => {
           </li>
         </ul>
       </nav>
+      <a className={styles.dmToggle} href='https://google.com'>
+        Dark Mode
+      </a>
+
+      {/*<LightDarkToggle />*/}
     </header>
   );
 };
