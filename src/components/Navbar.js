@@ -22,12 +22,9 @@ const Navbar = () => {
     <div>
       <div className={styles.headerContainer}>
         <header>
-          <img
-            className={styles.logo}
-            src='images/logo.png'
-            height='40px'
-            alt='logo'
-          />
+          <Link className={styles.logo} to='/'>
+            <img src='images/logo.png' height='40px' alt='logo' />
+          </Link>
           <nav>
             <ul>
               <li>

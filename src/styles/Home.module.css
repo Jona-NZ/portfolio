@@ -1,5 +1,5 @@
 .container {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .imgContainer {
@@ -37,7 +37,7 @@
 /* Project Section */
 
 .projectTitleContainer {
-  margin-top: 50px;
+  margin-top: 55px;
   display: flex;
   justify-content: center;
 }
