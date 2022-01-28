@@ -20,33 +20,35 @@ const Navbar = () => {
 
   return (
     <div>
-      <header>
-        <img
-          className={styles.logo}
-          src='images/logo.png'
-          height='40px'
-          alt='logo'
-        />
-        <nav>
-          <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <div className={styles.toggleMargin}>
-          <LightDarkToggle className={styles.toggle} />
-        </div>
-        <button className={styles.menu} onClick={toggleOverlay}>
-          <RiMenuFill className={styles.menuToggle} />
-        </button>
-      </header>
+      <div className={styles.headerContainer}>
+        <header>
+          <img
+            className={styles.logo}
+            src='images/logo.png'
+            height='40px'
+            alt='logo'
+          />
+          <nav>
+            <ul>
+              <li>
+                <Link to='/'>Home</Link>
+              </li>
+              <li>
+                <Link to='/about'>About</Link>
+              </li>
+              <li>
+                <Link to='/contact'>Contact</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={styles.toggleMargin}>
+            <LightDarkToggle className={styles.toggle} />
+          </div>
+          <button className={styles.menu} onClick={toggleOverlay}>
+            <RiMenuFill className={styles.menuToggle} />
+          </button>
+        </header>
+      </div>
 
       {/*MOBILE OVERLAY */}
       <div

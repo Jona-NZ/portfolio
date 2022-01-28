@@ -15,6 +15,12 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 70%;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -68,6 +74,10 @@ a:hover {
 
   .menu {
     display: inherit;
+  }
+
+  header {
+    width: 100%;
   }
 }
 
