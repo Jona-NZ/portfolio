@@ -6,27 +6,16 @@ import styles from '../styles/Home.module.css';
 const Home = () => {
   return (
     <div className={styles.container}>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className={styles.imgContainer}>
         <img
+          className={styles.portrait}
           src='/images/portrait.jpg'
-          style={{
-            clipPath: 'circle()',
-            height: '200px',
-          }}
-          alt=''
+          alt='portrait'
         />
       </div>
-      <div style={{ paddingTop: '25px' }}>
-        <h1 style={{ color: '#edf0f1', textAlign: 'center' }}>
-          Hi, I'm Jona 👋
-        </h1>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '15px',
-          }}
-        >
+      <div className={styles.container}>
+        <h1 className={styles.titleText}>Hi, I'm Jona 👋</h1>
+        <div className={styles.iconContainer}>
           <a
             href='https://github.com/Jona-NZ'
             target='_blank'
@@ -46,21 +35,11 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div style={{ marginTop: '50px' }}>
-        <h2 style={{ color: '#edf0f1', textAlign: 'center' }}>
-          Recent Projects 💻
-        </h2>
+      <div className={styles.projectTitleContainer}>
+        <h2 className={styles.titleText}>Recent Projects 💻</h2>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <div
-          style={{
-            margin: '25px',
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gridGap: '25px',
-            width: '70%',
-          }}
-        >
+      <div className={styles.projectContainer}>
+        <div className={styles.projectCardContainer}>
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />

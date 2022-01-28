@@ -1,5 +1,26 @@
 .container {
-  padding-top: 20px;
+  padding-top: 25px;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  clip-path: circle();
+  height: 200px;
+}
+
+.titleText {
+  color: #edf0f1;
+  text-align: center;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .socialIcons {
@@ -11,4 +32,25 @@
 
 .socialIcons:hover {
   color: #209cee;
+}
+
+/* Project Section */
+
+.projectTitleContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.projectCardContainer {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 25px;
+  width: 70%;
 }
