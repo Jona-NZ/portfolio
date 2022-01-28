@@ -5,3 +5,9 @@
 a:hover {
   opacity: 0.6;
 }
+
+.socialIcons {
+  color: #edf0f1;
+  font-size: 25px;
+  margin: 0px 7px;
+}

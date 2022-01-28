@@ -32,23 +32,17 @@ const Home = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaGithub style={{ color: '#edf0f1', fontSize: '25px' }} />
+            <FaGithub className={styles.socialIcons} />
           </a>
           <a
             href='https://www.linkedin.com/in/jona-stevenson-nz/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin
-              style={{
-                color: '#edf0f1',
-                fontSize: '25px',
-                margin: '0px 15px',
-              }}
-            />
+            <FaLinkedin className={styles.socialIcons} />
           </a>
           <a href='mailto:jonastevenson.nz@gmail.com'>
-            <FaEnvelope style={{ color: '#edf0f1', fontSize: '25px' }} />
+            <FaEnvelope className={styles.socialIcons} />
           </a>
         </div>
       </div>
