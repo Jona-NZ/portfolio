@@ -2,12 +2,13 @@
   padding-top: 20px;
 }
 
-a:hover {
-  opacity: 0.6;
-}
-
 .socialIcons {
   color: #edf0f1;
   font-size: 25px;
   margin: 0px 7px;
+  transition: all 0.3s ease 0s;
+}
+
+.socialIcons:hover {
+  color: #209cee;
 }
