@@ -9,12 +9,14 @@
 
 .portrait {
   clip-path: circle();
-  height: 200px;
+  height: 230px;
+  border-radius: 20px;
 }
 
 .titleText {
-  color: #edf0f1;
+  color: var(--color);
   text-align: center;
+  transition: all 0.4s ease;
 }
 
 .iconContainer {
@@ -24,10 +26,10 @@
 }
 
 .socialIcons {
-  color: #edf0f1;
+  color: var(--social-icons);
   font-size: 25px;
   margin: 0px 7px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease;
 }
 
 .socialIcons:hover {

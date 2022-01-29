@@ -1,9 +1,11 @@
 .card {
-  background: #1f2428;
+  background: var(--card-color);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   cursor: pointer;
+  /*border: 3px solid #1f2428;*/
+  transition: all 0.4s ease;
 }
 
 .card:hover {
@@ -15,9 +17,16 @@
   border-radius: 0 0 20px 20px;
 }
 
+.content h2 {
+  color: var(--card-text);
+  transition: all 0.4s ease;
+}
+
 .content p {
   font-size: 0.8rem;
   margin-top: 0.5rem;
+  color: var(--card-text);
+  transition: all 0.4s ease;
 }
 
 .tags {
@@ -29,7 +38,7 @@
 .tags span {
   margin: 0.5rem 0.5rem 0 0;
   padding: 0.2rem 0.5rem;
-  color: #fff;
+  color: var(--tag-text);
   border-radius: 20px;
   font-size: 0.75rem;
   transition: all 0.2s;

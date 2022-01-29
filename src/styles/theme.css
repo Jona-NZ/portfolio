@@ -1,8 +1,23 @@
 :root,
 [data-theme='dark'] {
+  /* look into transition */
   --background-color: #24292e;
+  --color: #edf0f1;
+  --social-icons: #edf0f1;
+  --link-color: #edf0f1;
+  --card-color: #1f2428;
+  --card-text: #edf0f1;
+  --tag-text: #edf0f1;
+  --menu-toggle: #edf0f1;
 }
 
 [data-theme='light'] {
   --background-color: #ffffff;
+  --color: rgb(40 44 54);
+  --social-icons: rgb(40 44 54);
+  --link-color: rgb(40 44 54);
+  --card-color: #f3f3f3;
+  --card-text: #1f2428;
+  --tag-text: #1f2428;
+  --menu-toggle: rgb(40 44 54);
 }

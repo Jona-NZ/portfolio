@@ -88,7 +88,7 @@ const Navbar = () => {
           backgroundColor: '#24252a',
           zIndex: 1,
           overflowX: 'hidden',
-          transition: 'all 0.5s ease 0s',
+          transition: 'all 0.5s ease',
         }}
       >
         <div className={styles.overlayContent}>
