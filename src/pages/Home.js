@@ -7,11 +7,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        <img
-          className={styles.portrait}
-          src='/images/portrait.jpg'
-          alt='portrait'
-        />
+        <div className={styles.bgImg} />
       </div>
       <div className={styles.container}>
         <h1 className={styles.titleText}>Hi, I'm Jona 👋</h1>

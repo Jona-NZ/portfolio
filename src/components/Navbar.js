@@ -85,7 +85,7 @@ const Navbar = () => {
           left: 0,
           width: overlayWidth,
           height: '100%',
-          backgroundColor: '#24252a',
+          backgroundColor: 'var(--overlay-bg)',
           zIndex: 1,
           overflowX: 'hidden',
           transition: 'all 0.5s ease',
@@ -104,9 +104,6 @@ const Navbar = () => {
           <Link onClick={toggleOverlay} to='/contact'>
             Contact
           </Link>
-          <div className={styles.toggleOverlayMargin}>
-            <LightDarkToggle click={toggleTheme} />
-          </div>
         </div>
       </div>
     </div>

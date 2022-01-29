@@ -7,6 +7,17 @@
   justify-content: center;
 }
 
+.bgImg {
+  clip-path: circle();
+  height: 230px;
+  width: 230px;
+  background-image: var(--portrait-img);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease;
+}
+
 .portrait {
   clip-path: circle();
   height: 230px;

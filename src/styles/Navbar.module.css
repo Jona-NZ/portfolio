@@ -67,8 +67,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  nav li,
-  .toggleMargin {
+  nav li {
     display: none;
   }
 
@@ -81,18 +80,6 @@ a:hover {
   }
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #24252a;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: all 0.5s ease 0s;
-}
-
 .overlayContent {
   display: flex;
   flex-direction: column;
@@ -101,16 +88,12 @@ a:hover {
   height: 100%;
 }
 
-.toggleOverlayMargin {
-  margin-top: 25px;
-}
-
 .overlayContent a {
   display: block;
   padding: 15px;
   font-size: 36px;
-  color: #edf0f1;
-  transition: all 0.3s ease 0s;
+  color: var(--overlay-text);
+  transition: all 0.4s ease;
 }
 
 .overlayContent a:hover,
@@ -122,12 +105,11 @@ a:focus,
 
 .closebtn {
   font-size: 60px;
-  color: #edf0f1;
+  color: var(--overlay-btn);
   position: absolute;
   top: 20px;
   right: 45px;
   cursor: pointer;
-  background-color: #24252a;
   padding: 0;
   border: none;
   background: none;

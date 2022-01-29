@@ -17,6 +17,12 @@ const ProjectCard = ({ props }) => {
           <span className={styles.mongo}>mongo</span>
           <span className={styles.firebase}>firebase</span>
         </div>
+
+        <div className={styles.links}>
+          <a href='https://github.com'>
+            <i className='fab fa-github' />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 :root,
 [data-theme='dark'] {
-  /* look into transition */
   --background-color: #24292e;
   --color: #edf0f1;
   --social-icons: #edf0f1;
@@ -9,6 +8,10 @@
   --card-text: #edf0f1;
   --tag-text: #edf0f1;
   --menu-toggle: #edf0f1;
+  --overlay-bg: #24252a;
+  --overlay-text: #edf0f1;
+  --overlay-btn: #edf0f1;
+  --portrait-img: url(../../public/images/portrait-dark.jpg);
 }
 
 [data-theme='light'] {
@@ -20,4 +23,8 @@
   --card-text: #1f2428;
   --tag-text: #1f2428;
   --menu-toggle: #1f2428;
+  --overlay-bg: #f3f3f3;
+  --overlay-text: #1f2428;
+  --overlay-btn: #1f2428;
+  --portrait-img: url(../../public/images/portrait.jpg);
 }
