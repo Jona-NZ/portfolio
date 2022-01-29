@@ -1,0 +1,8 @@
+:root,
+[data-theme='dark'] {
+  --background-color: #24292e;
+}
+
+[data-theme='light'] {
+  --background-color: #ffffff;
+}

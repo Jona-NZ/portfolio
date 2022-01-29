@@ -31,14 +31,13 @@
   width: 22px;
   transform: translateX(0px);
   transition: all 0.3s ease 0s;
-  /*transition: transform 0.2s linear;*/
 }
 
 .label .toggleBall:hover {
   background-color: #209cee;
 }
 
-.checkbox:checked + .label .toggle-ball {
+.checkbox:checked + .label .toggleBall {
   transform: translateX(24px);
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
 import LightDarkToggle from './LightDarkToggle';
@@ -7,6 +7,15 @@ import { RiMenuFill } from 'react-icons/ri';
 const Navbar = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const [overlayWidth, setOverlayWidth] = useState('0');
+  const [useDarkTheme, setUseDarkTheme] = useState(null);
+
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'light') {
+      setUseDarkTheme(false);
+    } else {
+      setUseDarkTheme(true);
+    }
+  }, []);
 
   const toggleOverlay = () => {
     if (isOverlayOpen) {
@@ -15,6 +24,27 @@ const Navbar = () => {
     } else {
       setOverlayWidth('100%');
       setIsOverlayOpen(!isOverlayOpen);
+    }
+  };
+
+  const toggleTheme = () => {
+    if (useDarkTheme) {
+      document.documentElement.setAttribute('data-theme', 'light');
+      setUseDarkTheme(!useDarkTheme);
+      localStorage.setItem('theme', 'light');
+
+      //Toggle Local Storage
+      let toggle = document.getElementById('toggle');
+      localStorage.setItem('toggle', toggle.checked);
+    }
+
+    if (!useDarkTheme) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      setUseDarkTheme(!useDarkTheme);
+      localStorage.setItem('theme', 'dark');
+
+      //Toggle Local Storage
+      localStorage.setItem('toggle', false);
     }
   };
 
@@ -39,7 +69,7 @@ const Navbar = () => {
             </ul>
           </nav>
           <div className={styles.toggleMargin}>
-            <LightDarkToggle className={styles.toggle} />
+            <LightDarkToggle click={toggleTheme} />
           </div>
           <button className={styles.menu} onClick={toggleOverlay}>
             <RiMenuFill className={styles.menuToggle} />
@@ -75,7 +105,7 @@ const Navbar = () => {
             Contact
           </Link>
           <div className={styles.toggleOverlayMargin}>
-            <LightDarkToggle className={styles.toggle} />
+            <LightDarkToggle click={toggleTheme} />
           </div>
         </div>
       </div>
