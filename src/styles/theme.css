@@ -13,11 +13,11 @@
 
 [data-theme='light'] {
   --background-color: #ffffff;
-  --color: rgb(40 44 54);
-  --social-icons: rgb(40 44 54);
-  --link-color: rgb(40 44 54);
+  --color: #1f2428;
+  --social-icons: #1f2428;
+  --link-color: #1f2428;
   --card-color: #f3f3f3;
   --card-text: #1f2428;
   --tag-text: #1f2428;
-  --menu-toggle: rgb(40 44 54);
+  --menu-toggle: #1f2428;
 }
