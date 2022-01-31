@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/ProjectCard.module.css';
+import { FaGithub } from 'react-icons/fa';
 
 const ProjectCard = ({ props }) => {
   return (
@@ -18,9 +19,13 @@ const ProjectCard = ({ props }) => {
           <span className={styles.firebase}>firebase</span>
         </div>
 
-        <div className={styles.links}>
-          <a href='https://github.com'>
-            <i className='fab fa-github' />
+        <div className={styles.iconContainer}>
+          <a
+            href='https://github.com/Jona-NZ'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaGithub className={styles.socialIcons} />
           </a>
         </div>
       </div>
