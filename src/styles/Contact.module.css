@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6% 0px 50px 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.content span.line {
+  font-size: 25px;
+  text-align: left;
+  margin-left: 45px;
+  font-weight: 400;
+  color: var(--color);
+  font-family: 'Source Code Pro', monospace;
+  transition: all 0.4s ease;
+}
+
+.content a {
+  font-size: 25px;
+  font-weight: 500;
+  color: #209cee;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.number {
+  font-size: 23px;
+  font-weight: 400;
+  color: var(--contact-num);
+  font-family: 'Source Code Pro', monospace;
+  transition: all 0.4s ease;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  color: #209cee;
+  font-family: 'Source Code Pro', monospace;
+}
+.close {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--color);
+  font-family: 'Source Code Pro', monospace;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .content span.line {
+    font-size: 17px;
+    margin-left: 30px;
+    box-decoration-break: clone;
+  }
+  .content a {
+    font-size: 17px;
+  }
+  .number {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .close {
+    font-size: 17px;
+  }
+}

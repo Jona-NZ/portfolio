@@ -12,6 +12,7 @@
   --overlay-text: #edf0f1;
   --overlay-btn: #edf0f1;
   --portrait-img: url(../../public/images/portrait-dark.jpg);
+  --contact-num: rgba(194, 194, 194, 0.5);
 }
 
 [data-theme='light'] {
@@ -27,4 +28,5 @@
   --overlay-text: #1f2428;
   --overlay-btn: #1f2428;
   --portrait-img: url(../../public/images/portrait.jpg);
+  --contact-num: #1f242891;
 }
