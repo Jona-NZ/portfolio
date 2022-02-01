@@ -7,14 +7,8 @@ const About = () => {
       <div className={styles.content}>
         <div className={styles.frontLayer}>
           <div className={styles.textContainer}>
-            <div
-              style={{
-                margin: '60px' /* EDIT FOR MOBILE - 60px desktop 40px mobile */,
-              }}
-            >
+            <div className={styles.varMargin}>
               <h1 className={styles.underline}>Hi, I'm Jona.</h1>
-              <br />
-              <br />
               <p>
                 Lorem ipsum dolor sit amet epic consectetur adipisicing elit.
                 Nihil dolores eos ut beatae facere soluta eius swag ipsam

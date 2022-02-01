@@ -37,7 +37,7 @@
 }
 
 .backLayer {
-  padding-top: 20%;
+  margin-top: 20%;
   grid-column: 6 / -1;
   grid-row: 1;
 }
@@ -51,6 +51,7 @@
   width: 450px;
   height: 450px;
   border-radius: 25px;
+  transition: all 0.4s ease;
 }
 
 .textContainer p {
@@ -59,6 +60,7 @@
   text-align: justify;
   font-weight: 400;
   padding-top: 10px;
+  transition: all 0.4s ease;
 }
 
 .bgImg {
@@ -72,7 +74,11 @@
   transition: all 0.4s ease;
 }
 
-@media only screen and (max-width: 800px) {
+.varMargin {
+  margin: 60px;
+}
+
+@media only screen and (max-width: 850px) {
   .content {
     margin: 0px;
     display: flex;
@@ -91,7 +97,7 @@
   }
 
   .backLayer {
-    padding-top: 5%;
+    margin-top: 5%;
     grid-column: auto;
     grid-row: auto;
   }
@@ -121,5 +127,9 @@
     font-size: 19px;
     text-align: left;
     font-weight: 400;
+  }
+
+  .varMargin {
+    margin: 40px;
   }
 }

@@ -36,7 +36,10 @@ const Home = () => {
       </div>
       <div className={styles.projectContainer}>
         <div className={styles.projectCardContainer}>
-          <ProjectCard />
+          <ProjectCard
+            title='Project Title'
+            desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, consequatur.'
+          />
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
