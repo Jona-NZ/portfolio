@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.header}>
+        <div>
           <h1 className={styles.underline}>Get in Touch</h1>
         </div>
 
