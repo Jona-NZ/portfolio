@@ -32,7 +32,7 @@ const Home = () => {
         >
           <FaLinkedin className={styles.socialIcons} />
         </a>
-        <a href='mailto:jonastevenson.nz@gmail.com'>
+        <a href='mailto:hi@jona.nz'>
           <FaEnvelope className={styles.socialIcons} />
         </a>
       </div>
