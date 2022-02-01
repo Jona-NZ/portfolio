@@ -13,8 +13,8 @@ const About = () => {
                 I am a final-year Bachelor of Computer and Information Sciences
                 student from AUT, majoring in Software Development. I'm
                 passionate about all things tech; I love to learn new
-                technologies, solve problems, and always look to improve my
-                skills.
+                technologies, solve problems, and always look to improve &amp;
+                expand my skills.
               </p>
             </div>
           </div>
