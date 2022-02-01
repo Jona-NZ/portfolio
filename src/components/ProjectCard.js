@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../styles/ProjectCard.module.css';
 import { FaGithub } from 'react-icons/fa';
-import { BsCode } from 'react-icons/bs';
 
 const ProjectCard = (props) => {
   return (
@@ -9,11 +8,7 @@ const ProjectCard = (props) => {
       <img className={styles.cardImg} src={props.project.image} alt='project' />
       <div className={styles.content}>
         <h2>{props.project.name}</h2>
-        <p>
-          {props.project.description}
-          {props.href}
-          {props.image}
-        </p>
+        <p>{props.project.description}</p>
         <div className={styles.tags}>
           {props.project.tags.map((tag, index) => (
             <span key={index} className={`${styles[tag]}`}>

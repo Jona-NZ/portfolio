@@ -19,8 +19,8 @@ const contactObjs = [
   },
   {
     title: 'email',
-    link: 'jonastevenson.nz@gmail.com',
-    href: 'mailto:jonastevenson.nz@gmail.com',
+    link: 'hi@jona.nz',
+    href: 'mailto:hi@jona.nz',
   },
 ];
 

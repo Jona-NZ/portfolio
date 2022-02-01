@@ -46,13 +46,6 @@ const Home = () => {
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
-
-          {/*
-          <ProjectCard name='A Project Title' />
-          <ProjectCard name='Project Title' />
-          <ProjectCard name='Project Title' />
-          <ProjectCard name='Project Title' />
-          */}
         </div>
       </div>
     </div>
