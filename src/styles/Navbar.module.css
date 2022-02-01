@@ -15,7 +15,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 70%;
+  width: 67%;
 }
 
 .headerContainer {
@@ -28,7 +28,7 @@ a {
   font-size: 17px;
   color: var(--link-color);
   text-decoration: none;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease;
 }
 
 a:hover {
@@ -58,7 +58,7 @@ a:hover {
   color: var(--menu-toggle);
   font-size: 36px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease;
 }
 
 .menuToggle:hover,
