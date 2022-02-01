@@ -2,21 +2,25 @@ import React from 'react';
 import styles from '../styles/ProjectCard.module.css';
 import { FaGithub } from 'react-icons/fa';
 
-const ProjectCard = ({ props }) => {
+const ProjectCard = (props) => {
+  console.log(`styles.${props.project.tags[0]}`);
+
   return (
     <div className={styles.card}>
-      <img className={styles.cardImg} src='/images/1.png' alt='' />
+      <img className={styles.cardImg} src='/images/1.png' alt='project' />
       <div className={styles.content}>
-        <h2>Project Title</h2>
+        <h2>{props.project.name}</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-          consequatur.
+          {props.project.description}
+          {props.href}
+          {props.image}
         </p>
         <div className={styles.tags}>
-          <span className={styles.react}>react</span>
-          <span className={styles.node}>node</span>
-          <span className={styles.mongo}>mongo</span>
-          <span className={styles.firebase}>firebase</span>
+          {props.project.tags.map((tag, index) => (
+            <span key={index} className={`${styles[tag]}`}>
+              {tag}
+            </span>
+          ))}
         </div>
 
         <div className={styles.iconContainer}>

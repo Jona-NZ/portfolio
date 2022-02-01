@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  /*border: 3px solid #1f2428;*/
   transition: all 0.4s ease;
 }
 
@@ -75,6 +74,30 @@ span.firebase {
 
 span.firebase:hover {
   background: #f9ca4275;
+}
+
+span.express {
+  border: 1.6px solid #f3df1e;
+}
+
+span.express:hover {
+  background: #f3df1e75;
+}
+
+span.react-native {
+  border: 1.6px solid #2596be;
+}
+
+span.react-native:hover {
+  background: #2595be75;
+}
+
+span.css-modules {
+  border: 1.6px solid #e60dc2;
+}
+
+span.css-modules:hover {
+  background: #e60dc275;
 }
 
 .cardImg {

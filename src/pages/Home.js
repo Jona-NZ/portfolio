@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import ProjectCard from '../components/ProjectCard';
 import styles from '../styles/Home.module.css';
+import { getProjects } from '../api/ProjectAPI';
 
 const Home = () => {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    setProjects(getProjects());
+    console.log(getProjects());
+  }, [projects]);
+
   return (
-    <div className={styles.container}>
+    <div>
       <div className={styles.imgContainer}>
         <div className={styles.bgImg} />
       </div>
@@ -36,13 +43,16 @@ const Home = () => {
       </div>
       <div className={styles.projectContainer}>
         <div className={styles.projectCardContainer}>
-          <ProjectCard
-            title='Project Title'
-            desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, consequatur.'
-          />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+
+          {/*
+          <ProjectCard name='A Project Title' />
+          <ProjectCard name='Project Title' />
+          <ProjectCard name='Project Title' />
+          <ProjectCard name='Project Title' />
+          */}
         </div>
       </div>
     </div>
