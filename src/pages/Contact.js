@@ -32,7 +32,7 @@ const Contact = () => {
       <div className={styles.content}>
         <span className={styles.title}>
           <span className={styles.number}>1</span> .contact{' '}
-          <span className={styles.close}>&#123;</span>
+          <span className={styles.bracket}>&#123;</span>
         </span>
 
         {contactObjs.map((contactObj, index) => {
@@ -54,7 +54,7 @@ const Contact = () => {
           );
         })}
 
-        <span className={styles.close}>
+        <span className={styles.bracket}>
           <span className={styles.number}>{lastElement + 3}</span> &#125;
         </span>
       </div>
