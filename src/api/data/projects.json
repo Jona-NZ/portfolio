@@ -1,26 +1,29 @@
 [
     {
         "id": 1,
-        "name": "JobSpy",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sed.",
-        "tags": ["node", "express", "mongo"],
-        "href": "http://github.com",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        "name": "JobSpy - Dev Job Search",
+        "description": "JobSpy uses scraping algorithms to conjugate job listings from various jobseeking platforms into one, easy to use site.",
+        "tags": ["ejs", "node", "express", "mongo", "python"],
+        "href": "https://github.com/Jona-NZ/job-spy",
+        "image": "/images/jobspy.png",
+        "isWIP": false
     },
     {
         "id:": 2,
-        "name": "Paralog",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sed.",
+        "name": "Paralog - Paragliding Logbook",
+        "description": "Paralog is a modern paragliding logbook designed to simplify flight logging while providing powerful statistics.",
         "tags": ["react-native", "firebase"],
-        "href": "http://github.com",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        "href": "https://github.com/Jona-NZ/paralog",
+        "image": "/images/paralog.png",
+        "isWIP": true
     },
     {
         "id:": 3,
-        "name": "Portfolio",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sed.",
+        "name": "React Portfolio",
+        "description": "The website that you're on right now! Built as a space to show what projects I'm working on.",
         "tags": ["react", "css-modules"],
-        "href": "http://github.com",
-        "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        "href": "https://github.com/Jona-NZ/portfolio",
+        "image": "/images/portfolio.png",
+        "isWIP": false
     }
 ]

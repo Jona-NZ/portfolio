@@ -18,6 +18,7 @@
 .content h2 {
   color: var(--card-text);
   transition: all 0.4s ease;
+  font-size: 20px;
 }
 
 .content p {
@@ -25,6 +26,40 @@
   margin-top: 8px;
   color: var(--card-text);
   transition: all 0.4s ease;
+}
+
+.cardImg {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.socialIcons {
+  color: var(--social-icons);
+  font-size: 25px;
+  margin: 0px 7px;
+  transition: all 0.4s ease;
+}
+
+.socialIcons:hover {
+  color: #209cee;
+}
+
+.wip {
+  color: var(--color);
+  font-size: 13px;
+  transition: all 0.4s ease;
+  margin: 0px 0px 3px 6px;
+  padding: 3.2px 8px;
+  border-radius: 20px;
+  border: 1.6px solid #fc5304;
+  background-color: #fc53041a;
 }
 
 /* TAGS */
@@ -100,25 +135,18 @@ span.css-modules:hover {
   background: #e60dc275;
 }
 
-.cardImg {
-  width: 100%;
-  border-radius: 15px;
+span.python {
+  border: 1.6px solid #234a6b;
 }
 
-.iconContainer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 15px;
+span.python:hover {
+  background: #234a6b75;
 }
 
-.socialIcons {
-  color: var(--social-icons);
-  font-size: 25px;
-  margin: 0px 7px;
-  transition: all 0.4s ease;
+span.ejs {
+  border: 1.6px solid #7c13f5;
 }
 
-.socialIcons:hover {
-  color: #209cee;
+span.ejs:hover {
+  background: #7c13f575;
 }

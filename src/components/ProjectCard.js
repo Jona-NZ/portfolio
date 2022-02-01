@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from '../styles/ProjectCard.module.css';
 import { FaGithub } from 'react-icons/fa';
+import { BsCode } from 'react-icons/bs';
 
 const ProjectCard = (props) => {
-  console.log(`styles.${props.project.tags[0]}`);
-
   return (
     <div className={styles.card}>
-      <img className={styles.cardImg} src='/images/1.png' alt='project' />
+      <img className={styles.cardImg} src={props.project.image} alt='project' />
       <div className={styles.content}>
         <h2>{props.project.name}</h2>
         <p>
@@ -25,12 +24,15 @@ const ProjectCard = (props) => {
 
         <div className={styles.iconContainer}>
           <a
-            href='https://github.com/Jona-NZ'
+            href={props.project.href}
             target='_blank'
             rel='noopener noreferrer'
           >
             <FaGithub className={styles.socialIcons} />
           </a>
+          {props.project.isWIP && (
+            <span className={styles.wip}>Work in Progress</span>
+          )}
         </div>
       </div>
     </div>
