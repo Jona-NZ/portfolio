@@ -10,11 +10,11 @@ const About = () => {
             <div className={styles.varMargin}>
               <h1 className={styles.underline}>Hi, I'm Jona.</h1>
               <p>
-                Lorem ipsum dolor sit amet epic consectetur adipisicing elit.
-                Nihil dolores eos ut beatae facere soluta eius swag ipsam
-                provident tempora nulla adipisci, voluptatibus cupiditate aut
-                voluptas iste quisquam animi? Placeat delectus aperiam elit
-                reiciendis ullam ducimus dolor ipsa natus tempora aliquid dicta?
+                I am a final-year Bachelor of Computer and Information Sciences
+                student from AUT, majoring in Software Development. I'm
+                passionate about all things tech; I love to learn new
+                technologies, solve problems, and always look to improve my
+                skills.
               </p>
             </div>
           </div>
