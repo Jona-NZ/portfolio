@@ -7,6 +7,7 @@
   clip-path: circle();
   height: 230px;
   width: 230px;
+  margin-bottom: 14px;
   background-image: var(--portrait-img);
   background-size: cover;
   background-position: center center;
@@ -61,7 +62,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 25px;
-  width: 65%;
+  width: 62%;
 }
 
 @media only screen and (max-width: 850px) {
