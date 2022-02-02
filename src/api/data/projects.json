@@ -3,7 +3,7 @@
         "id": 1,
         "name": "JobSpy - Dev Job Search",
         "description": "JobSpy uses scraping algorithms to conjugate job listings from various jobseeking platforms into one, easy to use site.",
-        "tags": ["ejs", "node", "express", "mongo", "python"],
+        "tags": ["ejs", "node", "mongo", "python"],
         "href": "https://github.com/Jona-NZ/job-spy",
         "image": "/images/jobspy.png",
         "isWIP": false
