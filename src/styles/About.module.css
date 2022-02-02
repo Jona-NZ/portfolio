@@ -57,7 +57,7 @@
 .textContainer p {
   font-size: 20px;
   color: var(--color);
-  text-align: justify;
+  text-align: left;
   font-weight: 400;
   padding-top: 10px;
   transition: all 0.4s ease;
