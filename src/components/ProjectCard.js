@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/ProjectCard.module.css';
 import { FaGithub } from 'react-icons/fa';
+import { RiGitRepositoryPrivateFill } from 'react-icons/ri';
 
 const ProjectCard = (props) => {
   return (
@@ -25,6 +26,9 @@ const ProjectCard = (props) => {
           >
             <FaGithub className={styles.socialIcons} />
           </a>
+          {props.project.isWIP && (
+            <RiGitRepositoryPrivateFill className={styles.socialIcons} />
+          )}
           {props.project.isWIP && (
             <span className={styles.wip}>Work in Progress</span>
           )}
