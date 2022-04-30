@@ -1,6 +1,6 @@
 # Personal React Portfolio
 
-A React portfolio built as a space to show what projects I'm working on.
+A React portfolio, built as a space to show what projects I'm working on.
 
 View it live: https://jona.nz
 
